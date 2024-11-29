@@ -11,3 +11,19 @@ Consigli del giorno:
 2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 */
 
+
+// 1 - Stampare i numeri da 1 a 100
+//   - stampare "Fizz" per i multipli di 3 e "Buzz" per i multipli di 5, "FizzBuzz" per i multipli di entrambi
+//     - se multiplo di 3 e 5 stampare "FizzBuzz", se solo di 3 stampare "Fizz", se di 5 stampare "Buzz". Altrimenti stampare il numero
+for (let i = 1; i <= 100; i++) {
+    
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        console.log("FizzBuzz")
+    } else if (i % 5 === 0) {
+        console.log("Buzz")
+    } else if (i % 3 === 0) {
+        console.log("Fizz")
+    } else {
+        console.log(i)
+    }
+}
